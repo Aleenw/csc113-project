@@ -56,9 +56,10 @@ System.out.println("Student not added. ");
 }
 else if(choice==2){
 System.out.println("Enter the name of the university: ");
-String Uniname=read.next();
+read.nextLine();
+String Uniname=read.nextLine();
 System.out.println("Enter the student name: ");
-String name=read.next();
+String name=read.nextLine();
 System.out.println("Enter the student id: ");
 String id=read.next();
 System.out.println("Enter the student age: ");
@@ -186,15 +187,15 @@ choice=read.nextInt();
 
 if(choice==1){
 
-sciences.display();
+sciences.toString();
 }
 
 else if(choice==2){
 
-computer.display();
+computer.toString();
 }
 else{
-medicine.display();
+medicine.toString();
 
 
 }
@@ -209,11 +210,10 @@ break;
 }while(option != 5);
 
 
-
-
-
+College obj = new College("computer", 10) ;
+obj.save("ss.txt") ;
+obj.load("ss.txt") ;
 
 }
 }
-} 
-Footer
+ 
