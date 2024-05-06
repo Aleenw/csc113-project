@@ -1,14 +1,9 @@
-public class Student extends University{
+import java.io.* ;
 
-private double Grade;
-
-
-
-
-
+public class Student extends University implements Serializable{
+double Grade;
 
 public Student( String Uniname, String name,String id,int age,double grade){
-
 super(Uniname,name,id,age);
 Grade=grade;
 }
@@ -26,8 +21,6 @@ String full = ch1+ch2+ch3 ;
 
 return   ID+"@student"+full+".edu.sa";
 }
-
-
 
 public String countGrade(){
 if(Grade>=95)
@@ -49,14 +42,12 @@ return "D";
 else
 return "F";
 
-
-
 }
 
-public void display(){
+public String toString(){
 
-super.display();
-System.out.println("grade: "+countGrade());
+super.toString();
+return "grade: "+countGrade();
 
 }
 
@@ -64,19 +55,5 @@ System.out.println("grade: "+countGrade());
 public String getID(){
   return ID;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
