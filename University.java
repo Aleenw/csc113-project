@@ -18,11 +18,12 @@ Age=age;
 public abstract String generateEmail();
 
 
-public void display(){
+public String toString(){
 
-System.out.println(" the name of the university: "+UniName+"\n name: "+Name+ "\n id: "+ID+"\n age: "+Age );
+return " the name of the university: "+UniName+"\n name: "+Name+ "\n id: "+ID+"\n age: "+Age ;
+ 
 
-
+}
 }
 
 
@@ -37,4 +38,3 @@ System.out.println(" the name of the university: "+UniName+"\n name: "+Name+ "\n
 
 
 
-}
